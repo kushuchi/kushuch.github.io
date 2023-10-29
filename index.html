@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルアプリ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E4F4E2;
+            padding: 20px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #C4C4C4;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #generate-button {
+            background-color: #5DBD76;
+            color: white;
+        }
+
+        #reset-button {
+            background-color: #E9A13A;
+            color: white;
+        }
+
+        textarea {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputName" placeholder="会話カード（N）">
+    <textarea id="outputArea" placeholder="[会話テキスト] 内容を表示するエリア。\n行 8 文字、桁 16 文字。"></textarea>
+    <button id="generate-button">次の質問へ</button>
+    <button id="reset-button">回答例</button>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
